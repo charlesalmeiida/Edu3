@@ -1,5 +1,5 @@
 .s-hero {
-  margin-top: 6rem;
+  margin: 6rem 0 5.5rem;
   .container {
     display: flex;
     justify-content: space-between;
@@ -25,3 +25,59 @@
     }
   }
 }
+
+.benefits {
+  background: #f8f9fa;
+  padding: 12rem 0;
+  .benefits-content {
+    text-align: center;
+    img {
+      margin: 3.2rem 0 3.2rem;
+    }
+    p {
+      opacity: 0.8;
+      max-width: 64.6rem;
+      margin: 0 auto;
+    }
+  }
+  .edupag {
+    padding: 188px 0 120px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100.8rem;
+    margin: 0 auto;
+    gap: 8.2rem;
+    .image-edupag {
+      width: 43.7rem;
+      height: 52rem;
+    }
+    p {
+      margin: 3.2rem 0 3.2rem;
+      opacity: 0.8;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+      margin-bottom: 4rem;
+      li {
+        list-style-image: url("../assets/svg/icon-check.svg");
+        align-items: center;
+        margin-left: 2.2rem;
+      }
+    }
+  }
+}
+
+.cards-benefits {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  .cards-row {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
