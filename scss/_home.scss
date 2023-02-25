@@ -1,0 +1,27 @@
+.s-hero {
+  margin-top: 6rem;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left {
+      h1 {
+        margin: 2.4rem 0 3.2rem;
+        max-width: 66rem;
+      }
+      p {
+        color: #f8f9fa;
+        opacity: 0.9;
+        max-width: 38.4rem;
+        margin-bottom: 40px;
+      }
+    }
+  }
+  .right {
+    img {
+      width: 59.2rem;
+      height: 51rem;
+      margin-right: -4rem;
+    }
+  }
+}
