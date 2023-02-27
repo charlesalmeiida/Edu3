@@ -13,7 +13,7 @@
         color: #f8f9fa;
         opacity: 0.9;
         max-width: 38.4rem;
-        margin-bottom: 40px;
+        margin-bottom: 4rem;
       }
     }
   }
@@ -41,10 +41,10 @@
     }
   }
   .edupag {
-    padding: 188px 0 120px;
+    padding: 18.8rem 0 0 0;
     display: flex;
     justify-content: space-between;
-    max-width: 100.8rem;
+    max-width: 102rem;
     margin: 0 auto;
     gap: 8.2rem;
     .image-edupag {
@@ -80,4 +80,110 @@
   }
 }
 
+.datas {
+  padding: 5.7rem 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 102rem;
+    margin: 0 auto;
+    .data {
+      text-align: center;
+      h4 {
+        font-family: "Poppins";
+        font-weight: 700;
+        font-size: 3.6rem;
+        line-height: 4rem;
+        color: #f8f9fa;
+      }
+      .text-data {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.2rem;
+        line-height: 3.2rem;
+        color: #f8f9fa;
+        opacity: 0.8;
+        margin-top: 1.2rem;
+      }
+    }
+  }
+}
 
+.agenda-digital {
+  background: #f8f9fa;
+  padding: 16rem 0;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 102rem;
+    margin: 0 auto;
+    .left {
+      p {
+        margin: 2.4rem 0;
+        opacity: 0.8;
+        max-width: 49.5rem;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+        margin-bottom: 4rem;
+        li {
+          list-style-image: url("../assets/svg/icon-check.svg");
+          align-items: center;
+          margin-left: 2.2rem;
+        }
+      }
+    }
+    .right {
+      img {
+        width: 48.8rem;
+        height: 35.4rem;
+      }
+    }
+  }
+}
+
+.flag-em {
+  padding: 5.8rem 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      color: #f8f9fa;
+      max-width: 48.8rem;
+    }
+  }
+}
+
+.gestao-educacional {
+  background: #f8f9fa;
+  padding: 12.3rem 0 10rem;
+  .container {
+    .gestao-ed-content {
+      text-align: center;
+      h2 {
+        margin-bottom: 3.2rem;
+      }
+    }
+    .gestao-img {
+      max-width: 102rem;
+      margin: 12.3rem auto 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .img-gestao {
+        width: 483px;
+        height: 507px;
+      }
+      p {
+        max-width: 384px;
+        opacity: 0.8;
+        margin: 2.4rem 0 4rem;
+      }
+    }
+  }
+}
