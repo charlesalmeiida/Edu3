@@ -185,5 +185,20 @@
         margin: 2.4rem 0 4rem;
       }
     }
+    .etapas-gestao {
+      text-align: center;
+      margin-top: 9.6rem;
+    }
+    .bullets {
+      display: flex;
+      justify-content: center;
+      gap: 6.4rem;
+      margin-top: 80px;
+      .bullet {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+      }
+    }
   }
 }
