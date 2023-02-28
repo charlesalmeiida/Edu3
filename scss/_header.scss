@@ -13,6 +13,24 @@ header {
       ul {
         display: flex;
         gap: 5.6rem;
+        li {
+          a {
+            position: relative;
+          }
+          a:after {
+            content: "";
+            position: absolute;
+            background-color: #f8f9fa;
+            height: 0.2rem;
+            width: 0;
+            left: 0;
+            bottom: -5px;
+            transition: 0.3s;
+          }
+          a:hover:after {
+            width: 100%;
+          }
+        }
       }
     }
   }
