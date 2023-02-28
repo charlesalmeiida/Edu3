@@ -75,6 +75,11 @@ button {
   display: flex;
   align-items: center;
   gap: 1.1rem;
+  transition: all 300ms ease-in-out;
+}
+.btn-secondary:hover {
+  background: linear-gradient(267deg, #0055af 0%, #4da3ff 100%);
+  gap: 1.4rem;
 }
 
 .btn-white {
@@ -82,6 +87,10 @@ button {
   border-radius: 0.4rem;
   padding: 1.2rem 3.2rem;
   color: #212529;
+  transition: all 300ms ease-in-out;
+}
+.btn-white:hover {
+  background: #f2e83d;
 }
 
 ul {
@@ -106,7 +115,7 @@ ul {
   text-align: center;
   border-bottom: 0.2rem solid #0055af;
   padding: 1.6rem 2.2rem 2.4rem;
-  box-shadow: 0px 0px 3.5rem rgba(119, 119, 120, 0.13);
+  box-shadow: 0px 0rem 3.5rem rgba(119, 119, 120, 0.13);
   img {
     width: 9.3rem;
     height: 9.3rem;

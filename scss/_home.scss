@@ -178,11 +178,11 @@
       align-items: center;
       justify-content: space-between;
       .img-gestao {
-        width: 483px;
-        height: 507px;
+        width: 48.3rem;
+        height: 50.7rem;
       }
       p {
-        max-width: 384px;
+        max-width: 38.4rem;
         opacity: 0.8;
         margin: 2.4rem 0 4rem;
       }
@@ -195,7 +195,7 @@
       display: flex;
       justify-content: center;
       gap: 6.4rem;
-      margin-top: 80px;
+      margin-top: 8rem;
       .bullet {
         display: flex;
         align-items: center;
@@ -212,17 +212,17 @@
     .depoimentos-text {
       text-align: center;
       img {
-        margin: 32px 0;
+        margin: 3.2rem 0;
       }
       p {
-        max-width: 291px;
+        max-width: 29.1rem;
         margin: 0 auto;
       }
     }
     .depoimento {
       display: flex;
       justify-content: space-between;
-      margin: 80px 0;
+      margin: 8rem 0;
       .depoimento-bubble {
         background-image: url("../assets/svg/bubble.svg");
         padding: 20rem 30rem 20rem;
@@ -232,7 +232,7 @@
           position: absolute;
           top: 15.7rem;
           left: 15.5rem;
-          max-width: 261px;
+          max-width: 26.1rem;
           color: #f8f9fa;
           text-align: center;
         }
@@ -245,7 +245,7 @@
       .testimonial-text {
         display: flex;
         flex-direction: column;
-        margin-left: 14px;
+        margin-left: 1.4rem;
       }
       .testimonial-left,
       .testimonial-right {
@@ -278,8 +278,8 @@
       margin-top: 8rem;
       .bullet {
         padding: 4rem 1.6rem;
-        border: 1px solid #e1e1e1;
-        border-radius: 4px;
+        border: 0.1rem solid #e1e1e1;
+        border-radius: 0.4rem;
         text-align: center;
         h3 {
           margin: 32px 0;
@@ -317,7 +317,7 @@
       background: url("..//assets/svg/line.svg");
       background-repeat: no-repeat;
       background-position-y: center;
-      background-position-x: 120px;
+      background-position-x: 12rem;
       .card-left {
         display: flex;
         align-items: center;
@@ -355,8 +355,8 @@
     }
     .right {
       img {
-        width: 520px;
-        height: 479px;
+        width: 52rem;
+        height: 47.9rem;
       }
     }
   }

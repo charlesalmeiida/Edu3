@@ -12,12 +12,22 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <header>
       <div class="container">
-        <img src="./assets/img/logo.png" alt="Logo do Edu3" />
-        <nav>
+        <img
+          data-aos="fade-right"
+          src="./assets/img/logo.png"
+          alt="Logo do Edu3"
+        />
+        <nav data-aos="fade-left">
           <ul>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Serviços</a></li>
@@ -30,17 +40,29 @@
     <section class="s-hero">
       <div class="container">
         <div class="left">
-          <span class="tag"> ERP Educacional + Agenda Escolar </span>
-          <h1>Transforme a Gestão Escolar com tecnologia e inovação</h1>
-          <p>
+          <span data-aos="fade-up" class="tag">
+            ERP Educacional + Agenda Escolar
+          </span>
+          <h1 data-aos="fade-up" data-aos-duration="500">
+            Transforme a Gestão Escolar com tecnologia e inovação
+          </h1>
+          <p data-aos="fade-up" data-aos-duration="500">
             A solução perfeita para você revolucionar sua escola, aliando o
             melhor de um ERP com agenda escolar, meios de pagamento e muito
             mais...
           </p>
-          <button class="btn-primary">SOLICITAR ORÇAMENTO PERSONALIZADO</button>
+          <button
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            class="btn-primary"
+          >
+            SOLICITAR ORÇAMENTO PERSONALIZADO
+          </button>
         </div>
         <div class="right">
           <img
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
             src="./assets/img/hero-banner.png"
             alt="Banner principal do site Edu3"
           />
@@ -50,12 +72,16 @@
     <section class="benefits">
       <div class="container">
         <div class="benefits-content">
-          <h2>Entendemos os desafios da gestão escolar!</h2>
+          <h2 data-aos="fade-up" data-aos-duration="400">
+            Entendemos os desafios da gestão escolar!
+          </h2>
           <img
+            data-aos="fade-up"
+            data-aos-duration="600"
             src="./assets/svg/icon-divisor-xadrez.svg"
             alt="Ícone de torre do Xadrez"
           />
-          <p>
+          <p data-aos="fade-up" data-aos-duration="600">
             Com <span>mais de 12 anos</span> de experiência no mercado de
             educação, desenvolvemos
             <span>processos e tecnologias inovadoras</span> para que sua escola
@@ -64,7 +90,13 @@
           </p>
         </div>
         <div class="cards-benefits">
-          <div class="cards-row">
+          <div
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="200"
+            data-aos-offset="0"
+            class="cards-row"
+          >
             <div class="card">
               <img
                 src="./assets/img/gestao-academica.png"
@@ -100,7 +132,13 @@
               </p>
             </div>
           </div>
-          <div class="cards-row">
+          <div
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="200"
+            data-aos-offset="0"
+            class="cards-row"
+          >
             <div class="card">
               <img
                 src="./assets/img/portal-aluno.png"
@@ -141,11 +179,19 @@
         </div>
         <div class="edupag">
           <img
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
             src="./assets/img/edupag-img.png"
             class="image-edupag"
             alt="Imagem EduPag"
           />
-          <div class="edupag-content">
+          <div
+            class="edupag-content"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <h2>Pagamentos Online</h2>
             <p>
               Um dos principais desafios das escolas é a redução da
@@ -169,29 +215,33 @@
         </div>
       </div>
     </section>
-    <section class="datas">
+    <section
+      class="datas"
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+    >
       <div class="container">
         <div class="data">
-          <h4>844</h4>
+          <h4 id="number1">844</h4>
           <p class="text-data">Faturas geradas</p>
         </div>
         <div class="data">
-          <h4>1240</h4>
+          <h4 id="number2">1240</h4>
           <p class="text-data">Cobranças</p>
         </div>
         <div class="data">
-          <h4>15419</h4>
+          <h4 id="number3">15419</h4>
           <p class="text-data">R$ Milhões / mês</p>
         </div>
         <div class="data">
-          <h4>67</h4>
+          <h4 id="number4">67</h4>
           <p class="text-data">R$ Milhões / anos</p>
         </div>
       </div>
     </section>
     <section class="agenda-digital">
       <div class="container">
-        <div class="left">
+        <div class="left" data-aos="fade-up-right">
           <h2>Agenda Digital</h2>
           <p>
             Na nova era digital, a comunicação rápida e eficiente é o que faz
@@ -213,7 +263,7 @@
             <img src="./assets/svg/arrow-right-light.svg" alt="" />
           </button>
         </div>
-        <div class="right">
+        <div class="right" data-aos="fade-up-left">
           <img
             src="./assets/img/banner-agenda-digital.png"
             alt="Banner Agenda Digital Edu3"
@@ -221,7 +271,11 @@
         </div>
       </div>
     </section>
-    <section class="flag-em">
+    <section
+      class="flag-em"
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+    >
       <div class="container">
         <h2>Você está preparado para o novo ensino médio?</h2>
         <div><button class="btn-white">Saiba mais</button></div>
@@ -229,14 +283,18 @@
     </section>
     <section class="gestao-educacional">
       <div class="container">
-        <div class="gestao-ed-content">
+        <div
+          class="gestao-ed-content"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
           <h2>Somos especialistas em Gestão Educacional</h2>
           <img
             src="./assets/svg/icon-divisor-xadrez.svg"
             alt="Ícone de torre do Xadrez"
           />
         </div>
-        <div class="gestao-img">
+        <div class="gestao-img" data-aos="fade-up">
           <img class="img-gestao" src="./assets/img/img-gestao.png" alt="" />
           <div class="gestao-img-text">
             <h3>Atendemos escolas regulares</h3>
@@ -252,7 +310,7 @@
             </button>
           </div>
         </div>
-        <div class="etapas-gestao">
+        <div class="etapas-gestao" data-aos="fade-up">
           <h3>Atendendo principalmente aos seguimentos 👇</h3>
           <div class="bullets">
             <div class="bullet">
@@ -273,7 +331,11 @@
     </section>
     <section class="depoimentos">
       <div class="container">
-        <div class="depoimentos-text">
+        <div
+          class="depoimentos-text"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
           <h2>Depoimentos</h2>
           <img src="./assets/svg/divisor-depoimentos.svg" alt="" />
           <p>
@@ -281,13 +343,13 @@
           </p>
         </div>
         <div class="depoimento">
-          <div class="depoimento-bubble">
+          <div class="depoimento-bubble" data-aos="fade-right">
             <p>
               Grursus mal suada faci lisis Lorem ipsum dolarorit more and dumm
               ametion consectetur elit. Vesti at bulum nec odio aea
             </p>
           </div>
-          <div class="depoimento-bubble">
+          <div class="depoimento-bubble" data-aos="fade-left">
             <p>
               Grursus mal suada faci lisis Lorem ipsum dolarorit more and dumm
               ametion consectetur elit. Vesti at bulum nec odio aea
@@ -295,14 +357,14 @@
           </div>
         </div>
         <div class="testimonials">
-          <div class="testimonial-left">
+          <div class="testimonial-left" data-aos="fade-right">
             <img src="./assets/img/testimonial1.png.png" alt="" />
             <div class="testimonial-text">
               <h3>Robert Bruce</h3>
               <p>Apps Developer</p>
             </div>
           </div>
-          <div class="testimonial-right">
+          <div class="testimonial-right" data-aos="fade-left">
             <img src="./assets/img/testimonial2.png.png" alt="" />
             <div class="testimonial-text">
               <h3>Cassie Ventura</h3>
@@ -312,6 +374,7 @@
         </div>
         <img
           class="divisor-slide"
+          data-aos="fade-up"
           src="./assets/svg/divisor-slide.svg"
           alt=""
         />
@@ -319,12 +382,20 @@
     </section>
     <section class="cuidamos">
       <div class="container">
-        <div class="cuidamos-text">
+        <div
+          class="cuidamos-text"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
           <h2>Cuidamos para que você cresça</h2>
           <img src="./assets/svg/icon-divisor-xadrez.svg" alt="" />
           <p>Conte conosco!</p>
         </div>
-        <div class="cuidamos-bullets">
+        <div
+          class="cuidamos-bullets"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           <div class="bullet">
             <img src="./assets/svg/icon-support.svg" alt="" />
             <h3>Suporte Online</h3>
@@ -361,7 +432,11 @@
     </section>
     <section class="inst">
       <div class="container">
-        <div class="inst-text">
+        <div
+          class="inst-text"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
           <h2>Implantação Rápida e sem fricção</h2>
           <img src="./assets/svg/divisor-rocket.svg" alt="" />
           <p>
@@ -370,7 +445,7 @@
             importados com segurança.
           </p>
         </div>
-        <div class="inst-content">
+        <div class="inst-content" data-aos="fade-up" data-aos-duration="2000">
           <div class="left">
             <div class="card-left">
               <img src="./assets/svg/icon-list.svg" alt="" />
@@ -409,7 +484,11 @@
         </div>
       </div>
     </section>
-    <section class="flag-conhecer">
+    <section
+      class="flag-conhecer"
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+    >
       <div class="container">
         <div class="left">
           <h2>Queremos conhecer você</h2>
@@ -425,10 +504,10 @@
     <footer>
       <div class="container">
         <div class="top">
-          <div class="left">
+          <div class="left" data-aos="fade-right">
             <img src="./assets/img/logo.png" alt="" />
           </div>
-          <div class="right">
+          <div class="right" data-aos="fade-left">
             <ul>
               <li>Blog</li>
               <li>Serviços</li>
@@ -439,7 +518,7 @@
         </div>
         <img class="line-footer" src="./assets/svg/line-footer.svg" alt="" />
         <div class="bottom">
-          <div class="left">
+          <div class="left" data-aos="fade-right">
             <p>São Bernardo do Campo / SP</p>
             <br />
             <p>11 4502-4580</p>
@@ -447,7 +526,7 @@
             <p>contato@edu3.com.br</p>
             <br />
           </div>
-          <div class="right">
+          <div class="right" data-aos="fade-left">
             <ul>
               <li>
                 <a href=""><img src="./assets/svg/facebook.svg" alt="" /></a>
@@ -464,5 +543,7 @@
         <p class="copyright">Copyright © 2023 Todos os direitos reservados</p>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
