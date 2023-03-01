@@ -3,19 +3,19 @@ AOS.init({
   once: true,
 })
 
-var project = setInterval(projectDone, 10)
-var cobranca = setInterval(cobrancasite, 10)
-var milhoes = setInterval(milhoesite, 10)
-var ano = setInterval(anosite, 10)
 let count1 = 700
 let count2 = 1100
 let count3 = 15300
 let count4 = 1
+let project
+let cobranca
+let milhoes
+let ano
 
 function projectDone() {
   count1++
   document.querySelector("#number1").innerHTML = count1
-  if (count1 == 844) {
+  if (count1 >= 844) {
     clearInterval(project)
   }
 }
@@ -43,3 +43,53 @@ function anosite() {
     clearInterval(ano)
   }
 }
+
+function showElement(element) {
+  element.classList.remove("hidden")
+  if (element.id === "number1") {
+    project = setInterval(projectDone, 10)
+  } else if (element.id === "number2") {
+    cobranca = setInterval(cobrancasite, 10)
+  } else if (element.id === "number3") {
+    milhoes = setInterval(milhoesite, 10)
+  } else if (element.id === "number4") {
+    ano = setInterval(anosite, 10)
+  }
+}
+
+const elements = document.querySelectorAll(".hidden")
+elements.forEach((element) => {
+  element.classList.add("hidden")
+})
+
+function showElement(element) {
+  element.classList.remove("hidden")
+  if (element.id === "number1") {
+    project = setInterval(projectDone, 10)
+  } else if (element.id === "number2") {
+    cobranca = setInterval(cobrancasite, 10)
+  } else if (element.id === "number3") {
+    milhoes = setInterval(milhoesite, 10)
+  } else if (element.id === "number4") {
+    ano = setInterval(anosite, 10)
+  }
+}
+
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      showElement(entry.target)
+      observer.unobserve(entry.target)
+    }
+  })
+})
+
+const element1 = document.querySelector("#number1")
+const element2 = document.querySelector("#number2")
+const element3 = document.querySelector("#number3")
+const element4 = document.querySelector("#number4")
+
+observer.observe(element1)
+observer.observe(element2)
+observer.observe(element3)
+observer.observe(element4)
