@@ -90,43 +90,66 @@
 .benefits {
   background: #f8f9fa;
   padding: 12rem 0;
-  display: none;
-  .benefits-content {
-    text-align: center;
-    img {
-      margin: 3.2rem 0 3.2rem;
+  .container {
+    .benefits-content {
+      text-align: center;
+      img {
+        margin: 3.2rem 0 3.2rem;
+      }
+      p {
+        opacity: 0.8;
+        max-width: 64.6rem;
+        margin: 0 auto;
+      }
     }
-    p {
-      opacity: 0.8;
-      max-width: 64.6rem;
+    .edupag {
+      padding: 18.8rem 0 0 0;
+      display: flex;
+      justify-content: space-between;
+      max-width: 102rem;
       margin: 0 auto;
+      gap: 8.2rem;
+      .image-edupag {
+        width: 43.7rem;
+        height: 52rem;
+      }
+      p {
+        margin: 3.2rem 0 3.2rem;
+        opacity: 0.8;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+        margin-bottom: 4rem;
+        li {
+          list-style-image: url("../assets/svg/icon-check.svg");
+          align-items: center;
+          margin-left: 2.2rem;
+          opacity: 0.8;
+        }
+      }
     }
   }
-  .edupag {
-    padding: 18.8rem 0 0 0;
-    display: flex;
-    justify-content: space-between;
-    max-width: 102rem;
-    margin: 0 auto;
-    gap: 8.2rem;
-    .image-edupag {
-      width: 43.7rem;
-      height: 52rem;
-    }
-    p {
-      margin: 3.2rem 0 3.2rem;
-      opacity: 0.8;
-    }
-    ul {
-      display: flex;
-      flex-direction: column;
-      gap: 1.6rem;
-      margin-bottom: 4rem;
-      li {
-        list-style-image: url("../assets/svg/icon-check.svg");
-        align-items: center;
-        margin-left: 2.2rem;
-        opacity: 0.8;
+  @media (max-width: 980px) {
+    .container {
+      .benefits-content {
+        padding: 16px;
+      }
+      .edupag {
+        display: block;
+        text-align: center;
+        .image-edupag {
+          width: 50%;
+          height: 90%;
+          margin-bottom: 4rem;
+        }
+        .btn-secondary {
+          margin: 0 auto;
+        }
+        ul {
+          padding: 0 5rem;
+        }
       }
     }
   }
