@@ -16,12 +16,73 @@
         margin-bottom: 4rem;
       }
     }
+    .right {
+      img {
+        width: 59.2rem;
+        height: 51rem;
+        margin-right: -4rem;
+      }
+    }
   }
-  .right {
-    img {
-      width: 59.2rem;
-      height: 51rem;
-      margin-right: -4rem;
+  @media (max-width: 1200px) {
+    padding: 0 2.4rem;
+    .container {
+      .left {
+        h1 {
+          font-size: 4.4rem;
+        }
+        .btn-primary {
+          padding: 16px 24px;
+        }
+      }
+      .right {
+        img {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  @media (max-width: 980px) {
+    .container {
+      display: block;
+      .left {
+        text-align: center;
+        h1 {
+          margin: 3.2rem auto;
+        }
+        p {
+          margin: 3.2rem auto;
+        }
+      }
+      .right {
+        display: flex;
+        justify-content: center;
+        margin-top: 8rem;
+      }
+    }
+  }
+  @media (max-width: 560px) {
+    .container {
+      .left {
+        h1 {
+          font-size: 4.2rem;
+        }
+      }
+      .right {
+        img {
+          width: 90%;
+          height: 50%;
+        }
+      }
+    }
+  }
+  @media (max-width: 391px) {
+    .container {
+      .left {
+        .btn-primary {
+          padding: 16px 16px;
+        }
+      }
     }
   }
 }
@@ -29,6 +90,7 @@
 .benefits {
   background: #f8f9fa;
   padding: 12rem 0;
+  display: none;
   .benefits-content {
     text-align: center;
     img {
@@ -75,6 +137,7 @@
   display: flex;
   flex-direction: column;
   gap: 10rem;
+  display: none;
   .cards-row {
     display: flex;
     justify-content: space-between;
@@ -83,6 +146,7 @@
 
 .datas {
   padding: 5.7rem 0;
+  display: none;
   .container {
     display: flex;
     justify-content: space-between;
@@ -114,6 +178,7 @@
 .agenda-digital {
   background: #f8f9fa;
   padding: 16rem 0;
+  display: none;
   .container {
     display: flex;
     align-items: center;
@@ -150,6 +215,7 @@
 
 .flag-em {
   padding: 5.8rem 0;
+  display: none;
   .container {
     display: flex;
     justify-content: space-between;
@@ -164,6 +230,7 @@
 .gestao-educacional {
   background: #f8f9fa;
   padding: 12.3rem 0 10rem;
+  display: none;
   .container {
     .gestao-ed-content {
       text-align: center;
@@ -208,6 +275,7 @@
 .depoimentos {
   background: #f8f9fa;
   padding: 8rem 0;
+  display: none;
   .container {
     .depoimentos-text {
       text-align: center;
@@ -262,6 +330,7 @@
 .cuidamos {
   background: #f8f9fa;
   padding: 8rem 0;
+  display: none;
   .container {
     .cuidamos-text {
       text-align: center;
@@ -297,6 +366,7 @@
 .inst {
   background: #f8f9fa;
   padding: 8rem 18rem;
+  display: none;
   .inst-text {
     text-align: center;
     margin-bottom: 6.8rem;
@@ -364,6 +434,7 @@
 
 .flag-conhecer {
   padding: 4.2rem 0;
+  display: none;
   .container {
     display: flex;
     justify-content: space-between;
