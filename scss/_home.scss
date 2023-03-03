@@ -81,7 +81,6 @@
     .container {
       .left {
         .btn-primary {
-          padding: 16px 16px;
         }
       }
     }
@@ -169,7 +168,7 @@
       .edupag {
         display: block;
         text-align: center;
-        padding: 18.8rem 1.6rem;
+        padding: 18.8rem 1.6rem 0;
         .image-edupag {
           width: 50%;
           height: 90%;
@@ -177,6 +176,7 @@
         }
         .btn-secondary {
           margin: 0 auto;
+          padding: 1.6rem 4.2rem;
         }
         ul {
           padding: 0 5rem;
@@ -188,7 +188,7 @@
 
 .datas {
   padding: 5.7rem 0;
-  display: none;
+  overflow: hidden;
   .container {
     display: flex;
     justify-content: space-between;
@@ -213,6 +213,16 @@
         opacity: 0.8;
         margin-top: 1.2rem;
       }
+    }
+  }
+  @media (max-width: 980px) {
+    padding: 5.7rem 2.4rem;
+  }
+  @media (max-width: 560px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
     }
   }
 }
