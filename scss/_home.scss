@@ -77,14 +77,6 @@
       }
     }
   }
-  @media (max-width: 391px) {
-    .container {
-      .left {
-        .btn-primary {
-        }
-      }
-    }
-  }
 }
 
 .benefits {
@@ -368,7 +360,6 @@
 .depoimentos {
   background: #f8f9fa;
   padding: 8rem 0;
-  display: none;
   .container {
     .depoimentos-text {
       text-align: center;
@@ -507,7 +498,6 @@
 .inst {
   background: #f8f9fa;
   padding: 8rem 18rem;
-  display: none;
   .inst-text {
     text-align: center;
     margin-bottom: 6.8rem;
@@ -544,7 +534,7 @@
       .card-right {
         display: flex;
         align-items: center;
-        margin: 10rem 0 12.2rem 12.2rem;
+        margin: 10rem 0 8.2rem 12.2rem;
         img {
           width: 16rem;
           height: 16rem;
@@ -557,7 +547,6 @@
             text-align: right;
           }
           p {
-            max-width: 22.2rem;
             margin-top: 0.8rem;
             text-align: right;
           }
@@ -565,9 +554,42 @@
       }
     }
     .right {
-      img {
-        width: 52rem;
-        height: 47.9rem;
+      .img-inst {
+        display: flex;
+        justify-content: end;
+        img {
+          width: 70%;
+        }
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    .inst-content {
+      flex-direction: column;
+      .left {
+        background-position-x: 35rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .card-right {
+          margin: 10rem 0 8.2rem 42.2rem;
+        }
+      }
+      .right {
+        .img-inst {
+          margin-top: 40px;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  @media (max-width: 620px) {
+    .inst-content {
+      .left {
+        background-position-x: 25rem;
+        .card-right {
+          margin: 10rem 0 8.2rem 35.2rem;
+        }
       }
     }
   }
