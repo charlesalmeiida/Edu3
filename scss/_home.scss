@@ -230,6 +230,7 @@
 .agenda-digital {
   background: #f8f9fa;
   padding: 16rem 0;
+  overflow: hidden;
   .container {
     display: flex;
     align-items: center;
@@ -278,8 +279,14 @@
           margin: 0 auto 8rem;
           padding: 1.6rem 4.2rem;
         }
-        ul { 
+        ul {
           align-items: center;
+        }
+      }
+      .right {
+        img {
+          width: 85%;
+          height: 50%;
         }
       }
     }
