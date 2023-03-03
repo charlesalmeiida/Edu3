@@ -295,7 +295,6 @@
 
 .flag-em {
   padding: 5.8rem 0;
-  display: none;
   .container {
     display: flex;
     justify-content: space-between;
@@ -303,6 +302,20 @@
     h2 {
       color: #f8f9fa;
       max-width: 48.8rem;
+    }
+  }
+  @media (max-width: 1200px) {
+    padding: 5.8rem 1.6rem;
+  }
+  @media (max-width: 670px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 24px;
+      .btn-white {
+        padding: 1.2rem 4.6rem;
+      }
     }
   }
 }
@@ -405,12 +418,38 @@
       margin-top: 2.4rem;
     }
   }
+  @media (max-width: 1200px) {
+    .container {
+      .depoimento {
+        align-items: center;
+        flex-direction: column;
+        .bubble2 {
+          display: none;
+        }
+      }
+      .testimonials {
+        .testimonial-right {
+          display: none;
+        }
+      }
+      .divisor-slide {
+        width: 100%;
+      }
+    }
+  }
+  @media (max-width: 560px) {
+    .container {
+      .depoimentos {
+        width: 50%;
+        padding: 0 26.6rem;
+      }
+    }
+  }
 }
 
 .cuidamos {
   background: #f8f9fa;
   padding: 8rem 0;
-  display: none;
   .container {
     .cuidamos-text {
       text-align: center;
@@ -437,6 +476,28 @@
         p {
           max-width: 22rem;
           margin: 0 auto;
+        }
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    .container {
+      .cuidamos-bullets {
+        padding: 0 16px;
+        gap: 16px;
+      }
+    }
+  }
+  @media (max-width: 980px) {
+    .container {
+      .cuidamos-bullets {
+        flex-direction: column;
+        .bullet {
+          width: 75%;
+          margin: 2.4rem auto;
+          h3 {
+            margin: 1.6rem auto;
+          }
         }
       }
     }
