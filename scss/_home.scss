@@ -287,6 +287,7 @@
 
 .flag-em {
   padding: 5.8rem 0;
+  overflow: hidden;
   .container {
     display: flex;
     justify-content: space-between;
@@ -316,6 +317,7 @@
   background: #f8f9fa;
   padding: 12.3rem 0 10rem;
   display: none;
+  overflow: hidden;
   .container {
     .gestao-ed-content {
       text-align: center;
@@ -360,6 +362,7 @@
 .depoimentos {
   background: #f8f9fa;
   padding: 8rem 0;
+  overflow: hidden;
   .container {
     .depoimentos-text {
       text-align: center;
@@ -430,17 +433,24 @@
   }
   @media (max-width: 560px) {
     .container {
-      .depoimentos {
+      .depoimento {
         width: 50%;
         padding: 0 26.6rem;
+        .depoimento-bubble {
+          padding: 20rem 27rem 20rem;
+        }
       }
     }
+  }
+  @media (max-width: 580px) {
+    display: none;
   }
 }
 
 .cuidamos {
   background: #f8f9fa;
   padding: 8rem 0;
+  overflow: hidden;
   .container {
     .cuidamos-text {
       text-align: center;
@@ -499,6 +509,7 @@
   background: #f8f9fa;
   padding: 8rem 18rem;
   display: none;
+  overflow: hidden;
   .inst-text {
     text-align: center;
     margin-bottom: 6.8rem;
@@ -598,7 +609,7 @@
 
 .flag-conhecer {
   padding: 4.2rem 0;
-  display: none;
+  overflow: hidden;
   .container {
     display: flex;
     justify-content: space-between;
@@ -610,6 +621,18 @@
       }
       p {
         color: #f8f9fa;
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    padding: 4.2rem 1.6rem;
+  }
+  @media (max-width: 980px) {
+    .container {
+      flex-direction: column;
+      gap: 24px;
+      .left {
+        text-align: center;
       }
     }
   }

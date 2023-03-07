@@ -1,7 +1,7 @@
 footer {
   background: #0055af;
   padding: 8rem 0 2.4rem;
-  display: none;
+  overflow: hidden;
   .container {
     .top {
       display: flex;
@@ -25,6 +25,7 @@ footer {
     }
     .line-footer {
       padding: 5.6rem 0 4rem;
+      width: 100px;
     }
     .bottom {
       display: flex;
@@ -48,6 +49,24 @@ footer {
       font-size: 1.4rem;
       opacity: 0.8;
       text-align: center;
+    }
+  }
+  @media (max-width: 1200px) {
+    padding: 8rem 1.6rem 2.4rem;
+  }
+  @media (max-width: 580px) {
+    .container {
+      .top {
+        flex-direction: column;
+        gap: 5.6rem;
+      }
+      .bottom {
+        .right {
+          ul {
+            gap: 4rem;
+          }
+        }
+      }
     }
   }
 }
