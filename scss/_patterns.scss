@@ -127,6 +127,7 @@ ul {
   transition: all 300ms ease-in;
   position: relative;
   z-index: 1;
+  border-radius: 4px;
   img {
     width: 9.3rem;
     height: 9.3rem;
@@ -152,6 +153,7 @@ ul {
   background: #0055af;
   z-index: -1;
   transition: all 0.3s;
+  border-radius: 4px;
 }
 .card:hover::after {
   transform: scaleY(1);
