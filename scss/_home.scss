@@ -325,14 +325,18 @@
       }
     }
     .gestao-img {
-      max-width: 102rem;
       margin: 12.3rem auto 0;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-around;
       .img-gestao {
         width: 50%;
         height: 50%;
+        .gestao-img-text {
+          h2 {
+            max-width: 38rem;
+          }
+        }
       }
       p {
         max-width: 38.4rem;
@@ -413,7 +417,7 @@
         position: relative;
         p {
           position: absolute;
-          top: 15.7rem;
+          top: 9.7rem;
           left: 15.5rem;
           max-width: 26.1rem;
           color: #f8f9fa;
@@ -434,6 +438,9 @@
       .testimonial-right {
         display: flex;
         align-items: center;
+        img {
+          max-width: 7rem;
+        }
       }
     }
     .divisor-slide {
@@ -677,5 +684,5 @@
     drop-shadow(0px 12.5216px 10.0172px rgba(77, 163, 255, 0.035))
     drop-shadow(0px 6.6501px 5.32008px rgba(77, 163, 255, 0.0282725))
     drop-shadow(0px 2.76726px 2.21381px rgba(77, 163, 255, 0.0196802));
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
