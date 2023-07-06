@@ -1,0 +1,51 @@
+.text-contato {
+  padding: 8.6rem 0;
+  background-color: #f8f9fa;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+}
+
+.form {
+  padding: 3.2rem 0 5.6rem;
+  background-color: #f8f9fa;
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    .left {
+      form {
+        display: flex;
+        flex-direction: column;
+        label {
+          margin-top: 2.4rem;
+        }
+        button {
+          margin-top: 4rem;
+          max-width: 20rem;
+        }
+      }
+    }
+    .right {
+      display: flex;
+      flex-direction: column;
+      gap: 9rem;
+      margin-top: 4rem;
+      .icon {
+        .content-icon {
+          display: flex;
+          img {
+            margin-right: 2.4rem;
+          }
+          p {
+            max-width: 30.1rem;
+            margin-top: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
