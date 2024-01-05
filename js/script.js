@@ -3,6 +3,15 @@ AOS.init({
   once: true,
 })
 
+const btnMobile = document.getElementById("btn-mobile")
+
+function toggleMenu() {
+  const nav = document.getElementById("nav")
+  nav.classList.toggle("active")
+}
+
+btnMobile.addEventListener("click", toggleMenu)
+
 let count1 = 700
 let count2 = 1100
 let count3 = 15300
@@ -93,12 +102,3 @@ observer.observe(element1)
 observer.observe(element2)
 observer.observe(element3)
 observer.observe(element4)
-
-const btnMobile = document.getElementById("btn-mobile")
-
-function toggleMenu() {
-  const nav = document.getElementById("nav")
-  nav.classList.toggle("active")
-}
-
-btnMobile.addEventListener("click", toggleMenu)

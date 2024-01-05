@@ -1,11 +1,17 @@
 .text-contato {
-  padding: 8.6rem 0;
+  padding: 8.6rem 1.6rem;
   background-color: #f8f9fa;
   .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 4rem;
+    h2 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
   }
 }
 
@@ -17,6 +23,7 @@
     justify-content: space-around;
     align-items: start;
     .left {
+      width: 40%;
       form {
         display: flex;
         flex-direction: column;
@@ -48,4 +55,31 @@
       }
     }
   }
+  @media (max-width: 900px) {
+    .container {
+      .left {
+        width: 85%;
+        .btn-secondary {
+          margin: 4rem auto;
+        }
+      }
+      .right {
+        display: none;
+      }
+    }
+  }
+}
+
+.mauticform-label {
+  color: var(--gray-04, #212529);
+  font-family: Roboto !important;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.699999988079071;
+}
+
+.mauticform-helpmessage {
+  font-size: 1.2rem !important;
 }

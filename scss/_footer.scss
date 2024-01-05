@@ -1,6 +1,6 @@
 footer {
   background: #0055af;
-  padding: 4.0rem 0 1.6rem;
+  padding: 4rem 0 1.6rem;
   overflow: hidden;
   .container {
     .top {
@@ -24,7 +24,7 @@ footer {
       }
     }
     .line-footer {
-      padding: 4.0rem 0 3.2rem;
+      padding: 4rem 0 3.2rem;
     }
     .bottom {
       display: flex;
@@ -58,8 +58,20 @@ footer {
       .top {
         flex-direction: column;
         gap: 5.6rem;
+        .right {
+          ul {
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            gap: 2.6rem;
+          }
+        }
       }
       .bottom {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 2rem;
         .right {
           ul {
             gap: 4rem;

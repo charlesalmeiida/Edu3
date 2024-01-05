@@ -1,0 +1,176 @@
+header.header-edupag {
+  .container {
+    nav {
+      ul {
+        li {
+          a {
+            color: var(--gray-04, #212529);
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  header.header-edupag {
+    .container {
+      nav {
+        ul {
+          li {
+            a {
+              color: #f8f9fa;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.flag-conhecer {
+  overflow: hidden;
+  background: var(
+    --gradient-blue,
+    linear-gradient(60deg, #0055af 0%, #4da3ff 100%)
+  );
+  h3 {
+    color: #f8f9fa;
+    margin-bottom: 2.4rem;
+  }
+}
+
+#edupag {
+  background: var(--gray-02, #e9ecef);
+  background-image: url(../assets/svg/bg-edupag.svg);
+  background-repeat: no-repeat;
+  .hero-edupag {
+    .container {
+      padding: 10rem 1.6rem;
+      display: flex;
+      justify-content: space-between;
+      .left {
+        margin-top: 5.6rem;
+        h1 {
+          max-width: 38.4rem;
+          margin-bottom: 3.2rem;
+        }
+        p {
+          max-width: 48.1rem;
+          color: var(--gray-01, #f8f9fa);
+          margin-bottom: 4rem;
+        }
+      }
+      .right {
+        .img-edupag {
+          img {
+            width: 100%;
+            max-width: 416px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  #edupag {
+    background-color: #4da3ff;
+    background-image: none;
+    .hero-edupag {
+      .container {
+        padding: 8rem 1.6rem;
+        flex-direction: column;
+        .left {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          margin-top: 0;
+        }
+        .right {
+          margin-top: 5.6rem;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          .img-edupag {
+            img {
+              width: 80%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.edupag-contents {
+  overflow: hidden;
+  .container {
+    padding: 9.6rem 1.6rem 9.6rem;
+    display: flex;
+    gap: 10.8rem;
+    .card-edupag {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      .text-card-edupag {
+        max-width: 59.2rem;
+        h3 {
+          font-size: 2rem;
+          margin-bottom: 2.4rem;
+          max-width: 41rem;
+          background: var(
+            --gradient-blue,
+            linear-gradient(60deg, #0055af 0%, #4da3ff 100%)
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          span {
+            font-family: Poppins;
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 32px;
+          }
+        }
+      }
+      .image-card-edupag {
+        display: flex;
+        justify-content: center;
+        img {
+          width: 50%;
+          margin-top: 3.2rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .edupag-contents {
+    background-color: #f8f9fa;
+  }
+}
+@media (max-width: 900px) {
+  .edupag-contents {
+    .container {
+      gap: 5.6rem;
+      flex-direction: column;
+      .card-edupag {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 3.2rem;
+        .text-card-edupag {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .image-card-edupag {
+          img {
+            width: 35%;
+          }
+        }
+      }
+    }
+  }
+}
