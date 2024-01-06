@@ -232,49 +232,47 @@
       </div>
 </section>
 
-    <section class="depoimentos" id="depoimentos">
-      <div class="container">
-        <div
-          class="depoimentos-text"
-          data-aos="fade-up"
-          data-aos-anchor-placement="center-bottom"
-        >
-          <h2><?php the_field('titulo_depoimentos_section') ?></h2>
-          <img src="<?php echo get_template_directory_uri(  ) ?>/assets/svg/divisor-depoimentos.svg" alt="" />
-          <p>
-            <?php the_field('subtitulo_depoimentos_section') ?>
-          </p>
-        </div>
-        <div class="depoimento">
-          <div class="depoimento-bubble bubble1" data-aos="fade-right">
-            <p>
-              <?php the_field('primeiro_depoimento_texto') ?>
-            </p>
-          </div>
-          <div class="depoimento-bubble bubble2" data-aos="fade-left">
-            <p>
-             <?php the_field('segundo_depoimento_texto') ?>
-            </p>
-          </div>
-        </div>
-        <div class="testimonials">
-          <div class="testimonial-left" data-aos="fade-right">
-            <img src="<?php the_field('primeiro_depoimento_foto') ?>" alt="" />
-            <div class="testimonial-text">
-              <h3><?php the_field('primeiro_depoimento_nome_cliente') ?></h3>
-              <!-- <p>Apps Developer</p> -->
+<section class="depoimentos" id="depoimentos">
+  <div class="container">
+    <div
+        class="depoimentos-text"
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+    >
+      <h2><?php the_field('titulo_depoimentos_section') ?></h2>
+      <img src="<?php echo get_template_directory_uri(  ) ?>/assets/svg/divisor-depoimentos.svg" alt="" />
+      <p>
+        <?php the_field('subtitulo_depoimentos_section') ?>
+      </p>
+    </div>
+
+    <div class="cards-depoimentos">
+      <div class="swiper-wrapper">
+           <?php the_field('') ?>
+
+            <?php if( have_rows('depoimentos_cards') ): while ( have_rows('depoimentos_cards') ) : the_row(); ?>
+        <div class="swiper-slide">
+            <div class="card-depoimento">
+              <div class="card-bubble">
+                <p>  <?php the_sub_field('depoimento') ?></p>
+              </div>
+              <div class="card-info">
+                <img src="<?php the_sub_field('foto_cliente') ?>" alt="">
+                <h3><?php the_sub_field('nome_cliente') ?></h3>
+              </div>
             </div>
-          </div>
-          <div class="testimonial-right" data-aos="fade-left">
-            <img src="<?php the_field('segundo_depoimento_foto') ?>" alt="" />
-            <div class="testimonial-text">
-              <h3><?php the_field('segundo_depoimento_nome_cliente') ?></h3>
-              <!-- <p>Product Manager</p> -->
-            </div>
-          </div>
         </div>
+     <?php endwhile; else : endif;?>
       </div>
-    </section>
+    </div>
+    <div class="swiper-pagination"></div>
+
+    <button class="btn btn-next">
+      <img src="<?php echo get_template_directory_uri(  ) ?>/assets/svg/arrow-right.svg" alt="">
+    </button>
+    <button class="btn btn-prev"><img src="<?php echo get_template_directory_uri(  ) ?>/assets/svg/arrow-right.svg" alt=""></button>
+  </div>
+</section>
 
     <section class="button-cta">
       <a href="<?php echo get_permalink( get_page_by_path('Contato') ) ?>"

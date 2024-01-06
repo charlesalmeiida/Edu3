@@ -4,29 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Primary Meta Tags -->
-  <title><?php bloginfo( 'name' ) ?>  <?php wp_title('-') ?></title>
-<meta name="title" content="Edu3 – Plataforma de Gestão Acadêmica e Financeira  " />
-<meta name="description" content="Transforme a Gestão Escolar com tecnologia e inovação
-A solução perfeita para você revolucionar sua escola, aliando o melhor de um ERP com agenda escolar, meios de pagamento e muito mais!" />
-
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.edu3.com.br/" />
-<meta property="og:title" content="Edu3 – Plataforma de Gestão Acadêmica e Financeira  " />
-<meta property="og:description" content="Transforme a Gestão Escolar com tecnologia e inovação
-A solução perfeita para você revolucionar sua escola, aliando o melhor de um ERP com agenda escolar, meios de pagamento e muito mais!" />
-<meta property="og:image" content="https://www.edu3.com.br/wp-content/themes/theme-EDU3/assets/img/meta-tag-image.png" />
-
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content="https://www.edu3.com.br/" />
-<meta property="twitter:title" content="Edu3 – Plataforma de Gestão Acadêmica e Financeira  " />
-<meta property="twitter:description" content="Transforme a Gestão Escolar com tecnologia e inovação
-A solução perfeita para você revolucionar sua escola, aliando o melhor de um ERP com agenda escolar, meios de pagamento e muito mais!" />
-<meta property="twitter:image" content="https://www.edu3.com.br/wp-content/themes/theme-EDU3/assets/img/meta-tag-image.png" />
-
-<!-- Meta Tags Generated with https://metatags.io -->
+    <title><?php bloginfo( 'name' ) ?>  <?php wp_title('-') ?></title>
+    <meta name="title" content="Edu3 – Plataforma de Gestão Acadêmica e Financeira  " />
+    <meta name="description" content="Transforme a Gestão Escolar com tecnologia e inovação
+    A solução perfeita para você revolucionar sua escola, aliando o melhor de um ERP com agenda escolar, meios de pagamento e muito mais!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.edu3.com.br/" />
+    <meta property="og:title" content="Edu3 – Plataforma de Gestão Acadêmica e Financeira  " />
+    <meta property="og:description" content="Transforme a Gestão Escolar com tecnologia e inovação
+    A solução perfeita para você revolucionar sua escola, aliando o melhor de um ERP com agenda escolar, meios de pagamento e muito mais!" />
+    <meta property="og:image" content="https://www.edu3.com.br/wp-content/themes/theme-EDU3/assets/img/meta-tag-image.png" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.edu3.com.br/" />
+    <meta property="twitter:title" content="Edu3 – Plataforma de Gestão Acadêmica e Financeira  " />
+    <meta property="twitter:description" content="Transforme a Gestão Escolar com tecnologia e inovação
+    A solução perfeita para você revolucionar sua escola, aliando o melhor de um ERP com agenda escolar, meios de pagamento e muito mais!" />
+    <meta property="twitter:image" content="https://www.edu3.com.br/wp-content/themes/theme-EDU3/assets/img/meta-tag-image.png" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(  ) ?>/css/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
