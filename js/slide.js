@@ -1,7 +1,7 @@
 var swiper = new Swiper(".cards-depoimentos", {
   slidesPerView: 2.1,
   spaceBetween: 30,
-  speed: 800,
+  speed: 400,
   pagination: {
     el: ".depoimentos .swiper-pagination",
     clickable: true,

@@ -274,41 +274,42 @@
   </div>
 </section>
 
-    <section class="button-cta">
-      <a href="<?php echo get_permalink( get_page_by_path('Contato') ) ?>"
-        ><button class="btn-primary">
-          <?php the_field('texto_botao_depoimentos_section') ?>
-        </button></a
-      >
-    </section>
-    <section class="cuidamos">
-      <div class="container">
-        <div
-          class="cuidamos-text"
-          data-aos="fade-up"
-          data-aos-anchor-placement="center-bottom"
-        >
-          <h2><?php the_field('titulo_section_cuidamos') ?></h2>
-          <img src="<?php echo get_template_directory_uri(  ) ?>/assets/svg/icon-divisor-xadrez.svg" alt="" />
-          <p><?php the_field('subtitulo_section_cuidamos') ?></p>
-        </div>
-        <div
-          class="cuidamos-bullets"
-          data-aos="fade-up"
-          data-aos-duration="2000"
-        >
-        <?php if( have_rows('bullets_diferenciais') ): while ( have_rows('bullets_diferenciais') ) : the_row(); ?>
-          <div class="bullet">
+<section class="button-cta">
+  <a href="<?php echo get_permalink( get_page_by_path('Contato') ) ?>"
+  ><button class="btn-primary">
+      <?php the_field('texto_botao_depoimentos_section') ?>
+    </button></a>
+</section>
+
+<section class="cuidamos">
+  <div class="container">
+    <div
+      class="cuidamos-text"
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+    >
+      <h2><?php the_field('titulo_section_cuidamos') ?></h2>
+      <img src="<?php echo get_template_directory_uri(  ) ?>/assets/svg/icon-divisor-xadrez.svg" alt="" />
+      <p><?php the_field('subtitulo_section_cuidamos') ?></p>
+    </div>
+    <div
+      class="cuidamos-bullets"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
+      <?php if( have_rows('bullets_diferenciais') ): while ( have_rows('bullets_diferenciais') ) : the_row(); ?>
+         <div class="bullet">
             <img src="<?php the_sub_field('icone_diferenciais') ?>" alt="" />
             <h3><?php the_sub_field('titulo_diferenciais') ?></h3>
             <p>
               <?php the_sub_field('subtitulo_diferenciais') ?>
             </p>
-          </div>
-          <?php endwhile; else : endif;?>
-        </div>
+         </div>
+      <?php endwhile; else : endif;?>
       </div>
-    </section>
+    </div>
+</section>
+
     <section class="inst">
       <div class="container">
         <div

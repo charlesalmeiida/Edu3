@@ -518,10 +518,10 @@
       .cards-depoimentos {
         .card-depoimento {
           .card-bubble {
-            padding-left: 0;
-            padding-right: 0;
-            border-radius: 50%;
-            height: 29vh;
+            padding-left: 0.6rem;
+            padding-right: 0.6rem;
+            border-radius: 10%;
+            height: 35vh;
             width: 100%;
             p {
               font-size: 1.4rem;
@@ -579,8 +579,7 @@
   @media (max-width: 1200px) {
     .container {
       .cuidamos-bullets {
-        padding: 0 16px;
-        gap: 16px;
+        flex-wrap: wrap;
       }
     }
   }
