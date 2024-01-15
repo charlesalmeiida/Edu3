@@ -75,7 +75,7 @@
                 'menu' => 'Header Principal',
                 'theme_location' => 'header-principal',
                 'container' => false,
-                'menu_id' => 'nav' // Adicione esta linha para definir a ID do menu
+                'menu_id' => 'nav' 
               );
               wp_nav_menu( $args );
           ?>

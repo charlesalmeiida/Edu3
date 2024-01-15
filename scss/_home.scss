@@ -734,6 +734,17 @@
   }
 }
 
+.whats-logo {
+  position: fixed;
+  bottom: 4.5rem;
+  right: 4.5rem;
+  z-index: 20;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
 @keyframes animateHero {
   0% {
     transform: translateY(0px);

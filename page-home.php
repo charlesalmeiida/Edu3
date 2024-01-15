@@ -364,6 +364,7 @@
         </div>
       </div>
     </section>
+   
     <section
       class="flag-conhecer"
       data-aos="fade-up"
@@ -381,6 +382,8 @@
         </div>
       </div>
     </section>
+    
+    <a title="Entre em contato agora mesmo!" class="whats-logo" href="https://wa.me/+5586988534166" target="_blank"><img src="<?php echo get_template_directory_uri(  ) ?>/assets/svg/whats-logo.svg" alt=""></a>
 
     <?php endwhile; else: endif; ?>
 

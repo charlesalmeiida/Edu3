@@ -25,7 +25,11 @@
           <p>contato@edu3.com.br</p>
           <br />
         </div>
-        <div class="right" data-aos="fade-left">
+        <div class="right">
+             <div class="apps">
+            <a href="https://play.google.com/store/apps/details?id=br.com.criativasoft.mobile.edu3&hl=pt_BR&gl=US" target="_blank"><img src="<?php echo get_template_directory_uri(  ) ?>/assets/svg/google-play.svg" alt="Botão para download na Play Store"></a>
+            <a href="https://apps.apple.com/br/app/edu3-portal-acadêmico/id1207483397" target="_blank"><img src="<?php echo get_template_directory_uri(  ) ?>/assets/svg/app-store.svg" alt="Botão para download na app store"></a>
+          </div>
           <ul>
             <li>
               <a href="https://www.facebook.com/Edu3Tec/" target="_blank"><img src="<?php echo get_template_directory_uri(  ) ?>/assets/svg/facebook.svg" alt="" /></a>
